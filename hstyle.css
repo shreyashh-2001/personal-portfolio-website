@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+} 
+
+html{
+    scroll-behavior: smooth;
+}
+
+ header{
+   padding: 16px;
+   position:sticky;
+   top: 0;
+   border: 1px solid;
+   background-color: #ffffff;
+ }
+ header nav a{
+     margin-right: 16px;
+    text-decoration:none;
+     
+    
+ }
+
+ header nav a:last-child{
+    margin-right:revert;
+
+   
+}
+ header nav a:hover{
+    text-decoration: underline;
+   
+ }   
+ .body{
+    margin: 0;
+ }
+
+ .container{
+    padding: 16px;
+     
+ }
+
+ .container h2{
+  text-align: center;
+ }
+
+.intro{
+    margin: -16px;
+    padding: 16px;
+    background-color:#000000de;
+    color: aliceblue;
+    text-align: center;
+}
+
+#profile-img{
+    height: 400px;
+    width: 400px;
+    border-radius: 16px;
+}
+
+.social-links img{
+    height: 20px;
+    width: 20px;
+}
+ 
+table,
+tr,
+td
+{
+    border: 1px solid;
+}
+
+th,
+td{
+    padding: 8px;
+}
+ 
+.dynamic-text-color{
+    color: royalblue;
+}
+
+nav a{
+    text-decoration: none;
+    color: royalblue;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu ul>li{
+    margin-bottom: 16px;
+    font-size: x-large;
+}
+
+section.menu nav{
+  margin-top: 48px;
+}
+
+#contact-me form{
+    max-width: 400px;
+    margin: auto;
+    padding: 16px;
+    border:    1px solid;
+    border-radius: 16px;
+}
+
+#contact label{
+     display: block;
+     font-weight: 600;
+}
+
+#contact input,#contact textarea,#contact button{
+   width: 100%;
+   font-size: 1.2rem;
+   padding: 5px;
+}
+
+#contact-me{
+    margin: 16px;
+}
+
+footer{
+    padding: 16px;
+
+
+    
+    text-align: center;
+    border-top: 4px solid;
+}
+
+.mobile-nav,
+section.menu{
+    display:none;
+}
+ 
+
+ @media (width<500px) {
+    .default-nav{
+        display: none;
+    }
+    .mobile-nav 
+     {
+        display: revert;
+    }
+
+    #menu-button{
+        display: block;
+        margin-left: auto;
+        border-radius: 8px;
+        background-color: transparent;
+     }
+    section.menu{
+        display: revert;
+        height: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background-color: white;
+        width: 100%;
+        transition: height 0.8s;
+     }
+
+     #close-menu{
+        position:absolute;
+        right: 16px;
+        top: 16px;
+        background: transparent;
+        font-size: x-large;
+        border: none;
+     }
+ }
+
+
+
+
+ @media (width<450px) {
+    #profile-pic{
+        width: 100%;
+    }
+ }
